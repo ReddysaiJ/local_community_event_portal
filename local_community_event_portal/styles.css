@@ -2,16 +2,26 @@
 @import url('https://googleapis.com');
 
 /* Apply the font to your elements */
-/* body {
+body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   color: white;
 }
-*{
+body p {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+/* *{
     margin: 0;
     padding: 0; 
     display: block;
     box-sizing: border-box;
-}
+} */
 footer {
     margin-top: 20px;
     text-align: center;
@@ -20,7 +30,7 @@ footer {
 h2 {
     text-align: center;
     margin-top: 20px;
-} */
+}
 #heading {
     text-align: center;
     margin-top: 20px;
@@ -69,5 +79,35 @@ table {
 table th, table td {
     border: 1px solid #ccc;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
+table tr:nth-child(even) {
+    background-color: grey;
+}
+.event-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+.details {
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid white;
+}
+form p {
+    display: none;
+}
+form p:hover {
+    display: block;
+} 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Student Management Dashboard</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .full{
+            border: solid 2px black;
+            text-align: center;
+            padding: 20px;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            margin: 20px;
+        }
+        .side{
+            border: solid 2px black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .content{
+            border: solid 2px black;
+            margin: 20px;
+            padding: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .side{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <header>
+            Student Management Dashboard
+        </header>
+        <div class="main">
+            <div class="side">
+                Side Bar<br>
+                ...
+            </div>
+            <div class="content">
+                Main Content<br>
+                ...
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
