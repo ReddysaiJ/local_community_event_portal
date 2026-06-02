@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .ball{
+            border: solid 20px gray;
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: move 2s ease-in-out infinite;
+        }
+
+        @keyframes move {
+            0%{
+                transform: translateX(-46vw);
+            }
+            50%{
+                transform: translateX(46vw);
+            }
+            100%{
+                transform: translateX(-46vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+
+    </div>
+</body>
+</html>

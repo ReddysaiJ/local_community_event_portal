@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .signal{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: solid 2px black;
+            padding: 20px;
+        }
+        .red{
+            border: solid 10px gray;
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: rlight 8s ease-in infinite;
+        }
+        .yellow{
+            border: solid 10px gray;
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: ylight 8s ease-in infinite;
+        }
+        .green{
+            border: solid 10px gray;
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: glight 8s ease-in infinite;
+        }
+
+        @keyframes rlight {
+            0%, 33% {
+                background-color: red;
+            }
+            34%, 100% {
+                background-color: gray;
+            }
+        }
+
+        @keyframes ylight {
+            0%, 34% {
+                background-color: gray;
+            }
+            35%, 65% {
+                background-color: yellow;
+            }
+            66%, 100% {
+                background-color: gray;
+            }
+        }
+
+        @keyframes glight {
+            0%, 67% {
+                background-color: gray;
+            }
+            68%, 99% {
+                background-color: green;
+            }
+            100% {
+                background-color: gray;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="signal">
+        <div class="red">
+
+        </div>
+        <div class="yellow">
+
+        </div>
+        <div class="green">
+
+        </div>
+    </div>
+</body>
+</html>
