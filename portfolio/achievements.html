@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        @media (max-width: 767.98px) {
+            .timeline-container {
+                border-left: 2px solid var(--bs-primary);
+                padding-left: 20px;
+                margin-left: 10px;
+            }
+        }
+
+        .row-timeline .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .row-timeline .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .08) !important;
+        }
+    </style>
+</head>
+<body>
+    <section id="certifications-timeline" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Certifications</h2>
+
+            <div class="timeline-container position-relative">
+                <div class="timeline-line position-absolute start-50 translate-middle-x h-100 bg-primary d-none d-md-block"
+                    style="width: 2px; top: 0;"></div>
+
+                <div
+                    class="row row-timeline g-4 mb-4 justify-content-start justify-content-md-between align-items-center">
+                    <div class="col-md-5 d-none d-md-block"></div>
+                    <div class="col-md-2 position-relative d-none d-md-block text-center">
+                        <div class="timeline-dot bg-primary rounded-circle mx-auto"
+                            style="width: 16px; height: 16px; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--bs-primary);">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">DSA</span>
+                                <h5 class="fw-bold">Smart Interviews</h5>
+                                <p class="text-muted mb-0">Demonstrated knowledge of datastructures with multiple edge constrains.</p>
+                                <div class="text-primary fw-bold small mt-3">MARCH 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="row row-timeline g-4 mb-4 justify-content-start justify-content-md-between align-items-center">
+                    <div class="col-12 col-md-5 order-2 order-md-1">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Cloud Computing</span>
+                                <h5 class="fw-bold">OCI Foundations Associate</h5>
+                                <p class="text-muted mb-0">Validated expertise in designing distributed systems, cloud
+                                    security, and automated scaling strategies.</p>
+                                <div class="text-primary fw-bold small mt-3">JANUARY 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 position-relative d-none d-md-block order-md-2 text-center">
+                        <div class="timeline-dot bg-primary rounded-circle mx-auto"
+                            style="width: 16px; height: 16px; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--bs-primary);">
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-none d-md-block order-md-3"></div>
+                </div>
+
+                <div
+                    class="row row-timeline g-4 mb-4 justify-content-start justify-content-md-between align-items-center">
+                    <div class="col-md-5 d-none d-md-block"></div>
+                    <div class="col-md-2 position-relative d-none d-md-block text-center">
+                        <div class="timeline-dot bg-primary rounded-circle mx-auto"
+                            style="width: 16px; height: 16px; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--bs-primary);">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Database</span>
+                                <h5 class="fw-bold">CS50 SQL foundations</h5>
+                                <p class="text-muted mb-0">Comprehensive program covering basic Sequel with joins, triggers, and functions.</p>
+                                <div class="text-primary fw-bold small mt-3">AUGUST 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="row row-timeline g-4 mb-4 justify-content-start justify-content-md-between align-items-center">
+                    <div class="col-12 col-md-5 order-2 order-md-1">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Cybersecurity</span>
+                                <h5 class="fw-bold">Google Cybersecurity Professional Certificate</h5>
+                                <p class="text-muted mb-0">Foundational training in network security practices, threat
+                                    detection models, SQL databases, and Python automation tools.</p>
+                                <div class="text-primary fw-bold small mt-3">MARCH 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 position-relative d-none d-md-block order-md-2 text-center">
+                        <div class="timeline-dot bg-primary rounded-circle mx-auto"
+                            style="width: 16px; height: 16px; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--bs-primary);">
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-none d-md-block order-md-3"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
