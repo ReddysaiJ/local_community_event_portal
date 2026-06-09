@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100 min-vw-100">
+        <form action="#" class="p-5 m-5 vw-100 border border-1 border-dark" style="max-width: 500px;">
+            <h4 class="fw-bold text-center">
+                Register
+            </h4>
+            <div class="form-floating my-3">
+                <input type="text" class="form-control" id="name" placeholder="" required>
+                <label for="name" class="form-label">Student Name</label>
+            </div>
+            <div class="form-floating my-3">
+                <input type="email" class="form-control" id="email" placeholder="" required>
+                <label for="email" class="form-label" >E-Mail</label>
+            </div>
+            <div class="form-floating my-3">
+                <input type="tel" class="form-control" id="mobile" placeholder="" pattern="[0-9]{10}" required>
+                <label for="mobile" class="form-label">Mobile Number</label>
+            </div>
+
+            <div class="input-group d-flex flex-column justify-content-center mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select w-100" id="gender" aria-label="Gender" required>
+                    <option selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer Not to Say">Prefer Not to Say</option>
+                </select>
+            </div>
+
+            <div class="input-group d-flex flex-column justify-content-center">
+                <label for="course" class="form-label">Course</label>
+                <select class="form-select w-100" id="course" aria-label="Course" required>
+                    <option selected>Course</option>
+                    <option value="Java Programming">Java Programming</option>
+                    <option value="Cloud Programming">Cloud Programming</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Python AI & MachineLearning">Python AI & MachineLearning</option>
+                </select>
+            </div>
+
+            <div class="input-group d-flex flex-column justify-content-center mt-3">
+                <label for="qualification" class="form-label">Qualification</label>
+                <select class="form-select w-100" id="qualification" aria-label="Qualification" required>
+                    <option selected>Qualification</option>
+                    <option value="SSC">SSC</option>
+                    <option value="12th or Equivalent">12th or Equivalent</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                </select>
+            </div>
+            <div class="form-floating my-3 mt-4">
+                <input type="text" class="form-control" id="address" placeholder="" required>
+                <label for="address" class="form-label">Address</label>
+            </div>
+            <div class="my-3">
+                <label for="formFile" class="form-label">Upload Resume</label>
+                <input class="form-control" type="file" id="formFile" required>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label" for="terms">I Accept Terms & Conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
